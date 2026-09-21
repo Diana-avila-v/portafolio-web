@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diana Nicole Avila Villao | Portafolio de Ingeniería de Software</title>
+  <meta name="description" content="Portafolio de Diana Nicole Avila Villao, estudiante de Ingeniería de Software en la UNEMI. Proyectos de bases de datos, business intelligence y seguridad de aplicaciones.">
+  <meta name="theme-color" content="#0a7b83">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script src="js/theme-init.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Principal">
+      <div class="navbar__inner container">
+        <a class="navbar__brand" href="#inicio">
+          <span class="navbar__mark" aria-hidden="true">DA</span>
+          <span> FDiana Nicole Avila Villao</span>
+        </a>
+
+        <ul class="navbar__menu" id="menu-principal">
+          <li><a class="navbar__link" href="#inicio">Inicio</a></li>
+          <li><a class="navbar__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="navbar__link" href="#habilidades">Habilidades</a></li>
+          <li><a class="navbar__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="navbar__link" href="#design-system">Design System</a></li>
+          <li><a class="navbar__link" href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Tema oscuro" aria-pressed="false">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+            </svg>
+          </button>
+          <button class="icon-button navbar__toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+            <span class="visually-hidden">Abrir menú</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__role">Estudiante de Ingeniería de Software</p>
+          <h1 id="titulo-inicio">Diana Nicole Avila Villao</h1>
+          <p class="hero__lead">Estudio en la UNEMI y me interesa convertir datos en decisiones y comprobar que el software sea confiable y seguro.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#proyectos">Ver proyectos</a>
+            <a class="button button--secondary" href="#contacto">Escribirme</a>
+          </div>
+        </div>
+
+        <figure class="schema">
+          <svg viewBox="0 0 520 440" role="img" aria-labelledby="schema-titulo schema-desc" focusable="false">
+            <title id="schema-titulo">Esquema estrella de mi perfil</title>
+            <desc id="schema-desc">Una tabla de hechos central conectada con cuatro dimensiones: datos, calidad, seguridad y software.</desc>
+
+            <path class="schema__line" d="M113 108 L200 150"/>
+            <path class="schema__line" d="M407 108 L320 150"/>
+            <path class="schema__line" d="M113 332 L200 290"/>
+            <path class="schema__line" d="M407 332 L320 290"/>
+
+            <rect class="schema__box" x="8" y="8" width="210" height="100" rx="10"/>
+            <path class="schema__head--dim" d="M8 40V18a10 10 0 0 1 10-10H208a10 10 0 0 1 10 10V40Z"/>
+            <text class="schema__title schema__title--dim" x="22" y="30">Dim_Datos</text>
+            <text class="schema__row" x="22" y="66">SQL Server</text>
+            <text class="schema__row" x="22" y="92">Power BI, SSIS</text>
+
+            <rect class="schema__box" x="302" y="8" width="210" height="100" rx="10"/>
+            <path class="schema__head--dim" d="M302 40V18a10 10 0 0 1 10-10H502a10 10 0 0 1 10 10V40Z"/>
+            <text class="schema__title schema__title--dim" x="316" y="30">Dim_Calidad</text>
+            <text class="schema__row" x="316" y="66">Scrum, ClickUp</text>
+            <text class="schema__row" x="316" y="92">Informes técnicos</text>
+
+            <rect class="schema__box" x="8" y="332" width="210" height="100" rx="10"/>
+            <path class="schema__head--dim" d="M8 364V342a10 10 0 0 1 10-10H208a10 10 0 0 1 10 10V364Z"/>
+            <text class="schema__title schema__title--dim" x="22" y="354">Dim_Seguridad</text>
+            <text class="schema__row" x="22" y="390">OWASP ZAP</text>
+            <text class="schema__row" x="22" y="416">Juice Shop</text>
+
+            <rect class="schema__box" x="302" y="332" width="210" height="100" rx="10"/>
+            <path class="schema__head--dim" d="M302 364V342a10 10 0 0 1 10-10H502a10 10 0 0 1 10 10V364Z"/>
+            <text class="schema__title schema__title--dim" x="316" y="354">Dim_Software</text>
+            <text class="schema__row" x="316" y="390">HTML, CSS, JS</text>
+            <text class="schema__row" x="316" y="416">Flutter (aprendiendo)</text>
+
+            <rect class="schema__box" x="150" y="150" width="220" height="140" rx="10"/>
+            <path class="schema__head--fact" d="M150 186V160a10 10 0 0 1 10-10H360a10 10 0 0 1 10 10V186Z"/>
+            <text class="schema__title schema__title--fact" x="164" y="174">Hecho_Formacion</text>
+            <text class="schema__row" x="164" y="214">claves a las 4 dimensiones</text>
+            <text class="schema__row" x="164" y="242">proyectos_entregados</text>
+            <text class="schema__row" x="164" y="270">habilidades_registradas</text>
+          </svg>
+          <figcaption>Mi perfil como esquema estrella: un hecho central y cuatro dimensiones.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="titulo-sobre-mi">Sobre mí</h2>
+          <p class="section__lead">Quién soy, qué estudio y qué estoy aprendiendo.</p>
+        </header>
+
+        <div class="about__grid">
+          <figure class="portrait">
+            <img src="assets/img/foto-perfil.svg" alt="Avatar de Diana Nicole Avila Villao" width="320" height="400">
+            <figcaption>Estudiante de Ingeniería de Software, UNEMI</figcaption>
+          </figure>
+
+          <div class="about__text">
+            <p>Soy estudiante de Ingeniería de Software en la Universidad Estatal de Milagro (UNEMI) y sigo aprendiendo cada día. Quiero seguir aprendiendo y aplicar lo que sé en proyectos reales.</p>
+            <p>He desarrollado proyectos en distintas áreas: sistemas con Arduino y Flask, una aplicación web con inteligencia artificial para detectar colores, análisis de datos con SQL Server y Power BI, y una herramienta de análisis de software para empresas, entre otros.</p>
+            <p>Actualmente desarrollo mi trabajo de titulación: un sistema de gestión de envases retornables para distribuidoras de agua embotellada, construido con Flutter, entre otras tecnologías, e incorporando APIs para predecir el riesgo de pérdida de envases.</p>
+          </div>
+
+          <aside class="panel about__aside" aria-labelledby="titulo-formacion">
+            <h3 id="titulo-formacion">Formación</h3>
+            <ul class="detail-list">
+              <li>
+                <strong>Ingeniería de Software</strong>
+                Universidad Estatal de Milagro (UNEMI), en curso
+              </li>
+              <li>
+                <strong>Materias que más uso</strong>
+                Business Intelligence y Proceso y Calidad de Software
+              </li>
+            </ul>
+
+            <h3>Intereses</h3>
+            <ul class="badge-list">
+              <li class="badge">Business Intelligence</li>
+              <li class="badge">Modelado de datos</li>
+              <li class="badge">Calidad de software</li>
+              <li class="badge">Seguridad de aplicaciones</li>
+              <li class="badge">Desarrollo móvil</li>
+            </ul>
+
+            <h3>Aprendiendo ahora</h3>
+            <ul class="badge-list">
+              <li class="badge badge--accent">JavaScript</li>
+              <li class="badge badge--accent">Flutter</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades" aria-labelledby="titulo-habilidades">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="titulo-habilidades">Habilidades</h2>
+          <p class="section__lead">Las tecnologías que uso en mis proyectos, agrupadas por área.</p>
+        </header>
+
+        <p class="skills__legend">Aprendiendo: estoy empezando. Básico: lo uso con guía o en prácticas cortas. Intermedio: lo he aplicado en un proyecto completo.</p>
+
+        <div class="skills__grid">
+          <article class="skill-group" aria-labelledby="grupo-datos">
+            <h3 id="grupo-datos">Bases de datos y BI</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">SQL</span>
+                <div>
+                  <h4 class="skill__name">SQL Server</h4>
+                  <p class="skill__desc">Diseño de tablas, llaves foráneas y consultas T-SQL en SSMS.</p>
+                  <p class="skill__level" data-level="3">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Intermedio
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">DW</span>
+                <div>
+                  <h4 class="skill__name">Modelado dimensional</h4>
+                  <p class="skill__desc">Esquemas estrella con tabla de hechos, dimensiones y KPIs.</p>
+                  <p class="skill__level" data-level="3">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Intermedio
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">BI</span>
+                <div>
+                  <h4 class="skill__name">Power BI</h4>
+                  <p class="skill__desc">Dashboards de varias páginas conectados en vivo a un cubo OLAP, con tarjetas de KPI, gráficos y botones de navegación.</p>
+                  <p class="skill__level" data-level="3">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Intermedio
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">ETL</span>
+                <div>
+                  <h4 class="skill__name">SSIS y procesos ETL</h4>
+                  <p class="skill__desc">Paquetes de carga en Visual Studio con Derived Column, Merge Join y Conditional Split.</p>
+                  <p class="skill__level" data-level="2">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Básico
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-group" aria-labelledby="grupo-web">
+            <h3 id="grupo-web">Desarrollo web y móvil</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">H5</span>
+                <div>
+                  <h4 class="skill__name">HTML y CSS</h4>
+                  <p class="skill__desc">Estructura semántica y diseño responsive con Grid y Flexbox.</p>
+                  <p class="skill__level" data-level="2">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Básico
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">JS</span>
+                <div>
+                  <h4 class="skill__name">JavaScript</h4>
+                  <p class="skill__desc">Interacciones con el DOM, como las de este portafolio.</p>
+                  <p class="skill__level" data-level="1">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Aprendiendo
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">Fl</span>
+                <div>
+                  <h4 class="skill__name">Flutter</h4>
+                  <p class="skill__desc">Lo usaré en mi tesis para una aplicación de gestión.</p>
+                  <p class="skill__level" data-level="1">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Aprendiendo
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="skill-group" aria-labelledby="grupo-calidad">
+            <h3 id="grupo-calidad">Calidad, seguridad y herramientas</h3>
+            <ul class="skill-list">
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">ZAP</span>
+                <div>
+                  <h4 class="skill__name">OWASP ZAP</h4>
+                  <p class="skill__desc">Escaneo de una aplicación de práctica y lectura de sus alertas.</p>
+                  <p class="skill__level" data-level="2">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Básico
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">SC</span>
+                <div>
+                  <h4 class="skill__name">Scrum y ClickUp</h4>
+                  <p class="skill__desc">Gestión de un proyecto con sprints y tablero de tareas.</p>
+                  <p class="skill__level" data-level="2">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Básico
+                  </p>
+                </div>
+              </li>
+              <li class="skill">
+                <span class="skill__icon" aria-hidden="true">Git</span>
+                <div>
+                  <h4 class="skill__name">Git y GitHub</h4>
+                  <p class="skill__desc">Control de versiones con commits descriptivos y repositorio público.</p>
+                  <p class="skill__level" data-level="2">
+                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                    Básico
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="proyectos" aria-labelledby="titulo-proyectos">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="titulo-proyectos">Proyectos destacados</h2>
+          <p class="section__lead">Trabajos académicos donde apliqué lo que estudio. Filtra por tecnología o abre los detalles de cada uno.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrar proyectos por tecnología">
+          <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="chip" type="button" data-filter="sql-server" aria-pressed="false">SQL Server</button>
+          <button class="chip" type="button" data-filter="power-bi" aria-pressed="false">Power BI</button>
+          <button class="chip" type="button" data-filter="owasp-zap" aria-pressed="false">OWASP ZAP</button>
+          <button class="chip" type="button" data-filter="flutter" aria-pressed="false">Flutter</button>
+        </div>
+        <p class="filters__status" role="status" data-filter-status>Mostrando 4 de 4 proyectos</p>
+
+        <div class="project-grid" id="lista-proyectos">
+          <article class="project-card" data-tecnologias="sql-server ssis ssas power-bi">
+            <figure class="project-card__media">
+              <img src="assets/img/proyecto-grooming.svg" alt="Esquema estrella del datamart Grooming con la tabla de hechos al centro y seis dimensiones alrededor" width="640" height="400" loading="lazy">
+            </figure>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Datamart Grooming de PetCare 360</h3>
+              <p class="project-card__summary">Datamart y dashboard para analizar los servicios de grooming de una empresa de cuidado de mascotas: ingresos, utilidad, servicios más rentables y clientes.</p>
+              <dl class="project-card__facts">
+                <div>
+                  <dt>Problema que resuelve</dt>
+                  <dd>Los datos vivían en un sistema transaccional y la gerencia no podía ver ingresos, márgenes ni tendencias por sucursal, servicio o canal.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>
+                    <ul class="badge-list">
+                      <li class="badge">SQL Server</li>
+                      <li class="badge">SSIS</li>
+                      <li class="badge">SSAS</li>
+                      <li class="badge">Power BI</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+              <div class="project-card__more" hidden>
+                <h4>Mi aporte</h4>
+                <p>Modelo dimensional en esquema estrella (una tabla de hechos y siete dimensiones) y dashboard de tres páginas en Power BI conectado en vivo al cubo. El ETL y el cubo OLAP se desarrollaron en equipo.</p>
+                <h4>Qué aprendí</h4>
+                <p>A separar el modelo transaccional del analítico, a definir KPIs como margen de utilidad y crecimiento de ingresos, y a detectar duplicados que inflaban las cantidades.</p>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
+              <a class="button button--secondary button--small" href="https://github.com/tu-usuario/datamart-grooming" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tecnologias="sql-server">
+            <figure class="project-card__media">
+              <img src="assets/img/proyecto-cineplus.svg" alt="Diagrama entidad-relación con las tablas Usuarios, Contenidos, Reproducciones y Valoraciones" width="640" height="400" loading="lazy">
+            </figure>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Base de datos CinePlus</h3>
+              <p class="project-card__summary">Diseño e implementación en SQL Server de la base de datos de una plataforma de streaming simulada: usuarios, contenidos, reproducciones y valoraciones.</p>
+              <dl class="project-card__facts">
+                <div>
+                  <dt>Problema que resuelve</dt>
+                  <dd>Una plataforma de streaming necesita registrar qué ve cada usuario y cómo valora los contenidos, con datos consistentes y sin duplicados.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>
+                    <ul class="badge-list">
+                      <li class="badge">SQL Server</li>
+                      <li class="badge">SSMS</li>
+                      <li class="badge">Modelo entidad-relación</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+              <div class="project-card__more" hidden>
+                <h4>Mi aporte</h4>
+                <p>Modelo entidad-relación y scripts CREATE TABLE con llaves primarias y foráneas para Usuarios, Contenidos, Reproducciones y Valoraciones.</p>
+                <h4>Qué aprendí</h4>
+                <p>A traducir un caso de negocio a un modelo relacional y a resolver problemas de conexión con SSMS.</p>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
+              <a class="button button--secondary button--small" href="https://github.com/tu-usuario/cineplus-bd" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tecnologias="owasp-zap">
+            <figure class="project-card__media">
+              <img src="assets/img/proyecto-owasp-zap.svg" alt="Ventana de escaneo con un escudo y barras que representan alertas de riesgo alto, medio y bajo" width="640" height="400" loading="lazy">
+            </figure>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Análisis de vulnerabilidades con OWASP ZAP</h3>
+              <p class="project-card__summary">Escaneo de seguridad a OWASP Juice Shop, una aplicación web hecha para practicar, con un informe técnico de los hallazgos.</p>
+              <dl class="project-card__facts">
+                <div>
+                  <dt>Problema que resuelve</dt>
+                  <dd>Las aplicaciones web pueden tener fallos de seguridad que solo se notan al probarlas; había que encontrarlos y explicarlos con claridad.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>
+                    <ul class="badge-list">
+                      <li class="badge">OWASP ZAP</li>
+                      <li class="badge">Juice Shop</li>
+                      <li class="badge">Seguridad web</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+              <div class="project-card__more" hidden>
+                <h4>Mi aporte</h4>
+                <p>Ejecuté el escaneo, identifiqué seis vulnerabilidades y redacté un informe técnico con formato institucional.</p>
+                <h4>Qué aprendí</h4>
+                <p>A leer las alertas de ZAP y a explicar su nivel de riesgo en un informe.</p>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
+              <a class="button button--secondary button--small" href="https://github.com/tu-usuario/informe-owasp-zap" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tecnologias="flutter">
+            <figure class="project-card__media">
+              <img src="assets/img/proyecto-bidones.svg" alt="Tres bidones de agua marcados como en la empresa, prestado y en riesgo" width="640" height="400" loading="lazy">
+            </figure>
+            <div class="project-card__body">
+              <p class="badge badge--accent">En desarrollo</p>
+              <h3 class="project-card__title">Sistema de gestión de bidones</h3>
+              <p class="project-card__summary">Sistema para controlar los bidones de agua de una empresa distribuidora: a quién se prestaron, quién tiene deudas y en qué estado están.</p>
+              <dl class="project-card__facts">
+                <div>
+                  <dt>Problema que resuelve</dt>
+                  <dd>La empresa lleva todo en papel y no puede saber qué bidones están en la calle, qué clientes deben ni quiénes compran más.</dd>
+                </div>
+                <div>
+                  <dt>Tecnologías</dt>
+                  <dd>
+                    <ul class="badge-list">
+                      <li class="badge">Flutter</li>
+                      <li class="badge">Levantamiento de requerimientos</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+              <div class="project-card__more" hidden>
+                <h4>Mi aporte</h4>
+                <p>Trabajo en un equipo de tres personas. Definí el problema y los requerimientos: trazabilidad de bidones, morosidad, segmentación de clientes y alertas de bidones en riesgo.</p>
+                <h4>Qué estoy aprendiendo</h4>
+                <p>A delimitar el alcance de una tesis y a justificarla con datos reales de la empresa.</p>
+              </div>
+            </div>
+            <div class="project-card__actions">
+              <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="design-system" aria-labelledby="titulo-design-system">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="titulo-design-system">Design System / Componentes</h2>
+          <p class="section__lead">Las decisiones visuales y los componentes que se usan en este portafolio. Cambia el tema con el botón de la barra superior y los valores de color se actualizan.</p>
+        </header>
+
+        <section class="ds-block" aria-labelledby="ds-colores">
+          <h3 id="ds-colores">Colores</h3>
+          <p>Cada color es una CSS Custom Property definida en <code>css/tokens.css</code>. El valor que ves debajo se lee del tema activo.</p>
+          <ul class="swatch-grid">
+            <li class="swatch">
+              <span class="swatch__color swatch__color--primary" aria-hidden="true"></span>
+              <p class="swatch__name">Primary</p>
+              <code>--color-primary</code>
+              <code data-token="--color-primary">#0a7b83</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--secondary" aria-hidden="true"></span>
+              <p class="swatch__name">Secondary</p>
+              <code>--color-secondary</code>
+              <code data-token="--color-secondary">#5b3fd1</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--accent" aria-hidden="true"></span>
+              <p class="swatch__name">Accent</p>
+              <code>--color-accent</code>
+              <code data-token="--color-accent">#f2b705</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--background" aria-hidden="true"></span>
+              <p class="swatch__name">Background</p>
+              <code>--color-background</code>
+              <code data-token="--color-background">#f1f6f6</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--surface" aria-hidden="true"></span>
+              <p class="swatch__name">Surface</p>
+              <code>--color-surface</code>
+              <code data-token="--color-surface">#ffffff</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--surface-alt" aria-hidden="true"></span>
+              <p class="swatch__name">Surface alt</p>
+              <code>--color-surface-alt</code>
+              <code data-token="--color-surface-alt">#e4eded</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--text" aria-hidden="true"></span>
+              <p class="swatch__name">Text</p>
+              <code>--color-text</code>
+              <code data-token="--color-text">#14222b</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--text-muted" aria-hidden="true"></span>
+              <p class="swatch__name">Text muted</p>
+              <code>--color-text-muted</code>
+              <code data-token="--color-text-muted">#4f6270</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--border" aria-hidden="true"></span>
+              <p class="swatch__name">Border</p>
+              <code>--color-border</code>
+              <code data-token="--color-border">#cbd9da</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--success" aria-hidden="true"></span>
+              <p class="swatch__name">Success</p>
+              <code>--color-success</code>
+              <code data-token="--color-success">#1b7a4e</code>
+            </li>
+            <li class="swatch">
+              <span class="swatch__color swatch__color--danger" aria-hidden="true"></span>
+              <p class="swatch__name">Danger</p>
+              <code>--color-danger</code>
+              <code data-token="--color-danger">#b42335</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="ds-block" aria-labelledby="ds-tipografia">
+          <h3 id="ds-tipografia">Tipografía</h3>
+          <p>Títulos en Bricolage Grotesque y texto corrido en IBM Plex Sans. Los tamaños son variables y los títulos grandes se adaptan al ancho de pantalla.</p>
+          <div>
+            <div class="type-sample">
+              <p class="h1">Título principal</p>
+              <p class="type-sample__meta">h1: Bricolage Grotesque Bold, --text-3xl</p>
+            </div>
+            <div class="type-sample">
+              <p class="h2">Título de sección</p>
+              <p class="type-sample__meta">h2: Bricolage Grotesque Bold, --text-2xl</p>
+            </div>
+            <div class="type-sample">
+              <p class="h3">Título de bloque</p>
+              <p class="type-sample__meta">h3: Bricolage Grotesque Bold, --text-xl</p>
+            </div>
+            <div class="type-sample">
+              <p>Párrafo de lectura. Uso una altura de línea generosa y líneas de menos de 80 caracteres para que el texto se lea con comodidad.</p>
+              <p class="type-sample__meta">Párrafo: IBM Plex Sans Regular, --text-base</p>
+            </div>
+            <div class="type-sample">
+              <p class="text-muted">Texto secundario para descripciones y notas de apoyo.</p>
+              <p class="type-sample__meta">Texto secundario: --color-text-muted</p>
+            </div>
+            <div class="type-sample">
+              <p><a href="#design-system">Enlace dentro de un párrafo</a></p>
+              <p class="type-sample__meta">Enlace: --color-link, subrayado</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ds-block" aria-labelledby="ds-espaciado">
+          <h3 id="ds-espaciado">Espaciado</h3>
+          <p>Una escala de seis pasos que se usa en márgenes, rellenos y separaciones entre elementos.</p>
+          <ul class="space-scale">
+            <li>
+              <span class="space-scale__bar space-scale__bar--xs" aria-hidden="true"></span>
+              <code>--space-xs</code>
+              <code data-token="--space-xs">0.25rem</code>
+            </li>
+            <li>
+              <span class="space-scale__bar space-scale__bar--sm" aria-hidden="true"></span>
+              <code>--space-sm</code>
+              <code data-token="--space-sm">0.5rem</code>
+            </li>
+            <li>
+              <span class="space-scale__bar space-scale__bar--md" aria-hidden="true"></span>
+              <code>--space-md</code>
+              <code data-token="--space-md">1rem</code>
+            </li>
+            <li>
+              <span class="space-scale__bar space-scale__bar--lg" aria-hidden="true"></span>
+              <code>--space-lg</code>
+              <code data-token="--space-lg">1.5rem</code>
+            </li>
+            <li>
+              <span class="space-scale__bar space-scale__bar--xl" aria-hidden="true"></span>
+              <code>--space-xl</code>
+              <code data-token="--space-xl">3rem</code>
+            </li>
+            <li>
+              <span class="space-scale__bar space-scale__bar--2xl" aria-hidden="true"></span>
+              <code>--space-2xl</code>
+              <code data-token="--space-2xl">4.5rem</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="ds-block" aria-labelledby="ds-formas">
+          <h3 id="ds-formas">Bordes, radios y sombras</h3>
+          <p>Cada nivel de importancia tiene su propio radio: pequeño para controles, medio para tarjetas y grande para imágenes y ventanas.</p>
+          <ul class="token-samples">
+            <li class="token-sample">
+              <span class="token-sample__box token-sample__box--sm" aria-hidden="true"></span>
+              <code>--radius-sm</code>
+              <code data-token="--radius-sm">0.375rem</code>
+            </li>
+            <li class="token-sample">
+              <span class="token-sample__box token-sample__box--md" aria-hidden="true"></span>
+              <code>--radius-md</code>
+              <code data-token="--radius-md">0.75rem</code>
+            </li>
+            <li class="token-sample">
+              <span class="token-sample__box token-sample__box--lg" aria-hidden="true"></span>
+              <code>--radius-lg</code>
+              <code data-token="--radius-lg">1.25rem</code>
+            </li>
+            <li class="token-sample">
+              <span class="token-sample__box token-sample__box--pill" aria-hidden="true"></span>
+              <code>--radius-pill</code>
+              <code data-token="--radius-pill">999px</code>
+            </li>
+            <li class="token-sample">
+              <span class="token-sample__box token-sample__box--shadow-card" aria-hidden="true"></span>
+              <code>--shadow-card</code>
+            </li>
+            <li class="token-sample">
+              <span class="token-sample__box token-sample__box--shadow-raised" aria-hidden="true"></span>
+              <code>--shadow-raised</code>
+            </li>
+          </ul>
+        </section>
+
+        <section class="ds-block" aria-labelledby="ds-componentes">
+          <h3 id="ds-componentes">Componentes</h3>
+          <p>Son los mismos componentes que se usan en el resto del sitio. También hay un modal de detalles (se abre con Ver detalles en cada proyecto), un indicador de nivel en las habilidades y el botón Volver arriba.</p>
+
+          <div class="ds-components">
+            <div class="ds-demo">
+              <h4>Botones</h4>
+              <div class="ds-demo__row">
+                <a class="button button--primary" href="#proyectos">Botón primario</a>
+                <a class="button button--secondary" href="#contacto">Botón secundario</a>
+              </div>
+              <div class="ds-demo__row">
+                <button class="button button--primary button--small" type="button">Pequeño</button>
+                <button class="icon-button" type="button" data-theme-toggle aria-label="Tema oscuro" aria-pressed="false">
+                  <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+                  </svg>
+                  <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="ds-demo">
+              <h4>Chips y badges</h4>
+              <div class="ds-demo__row">
+                <button class="chip" type="button" aria-pressed="true">Activo</button>
+                <button class="chip" type="button" aria-pressed="false">Inactivo</button>
+              </div>
+              <ul class="badge-list">
+                <li class="badge">Badge</li>
+                <li class="badge badge--accent">En desarrollo</li>
+              </ul>
+            </div>
+
+            <div class="ds-demo">
+              <h4>Habilidad</h4>
+              <ul class="skill-list">
+                <li class="skill">
+                  <span class="skill__icon" aria-hidden="true">SQL</span>
+                  <div>
+                    <h5 class="skill__name">SQL Server</h5>
+                    <p class="skill__desc">Diseño de tablas, llaves foráneas y consultas T-SQL en SSMS.</p>
+                    <p class="skill__level" data-level="3">
+                      <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+                      Intermedio
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="ds-demo">
+              <h4>Campos de formulario</h4>
+              <div class="field">
+                <label class="field__label" for="ds-nombre">Campo de texto</label>
+                <input class="field__control" id="ds-nombre" type="text" placeholder="Escribe tu nombre">
+              </div>
+              <div class="field">
+                <label class="field__label" for="ds-correo">Campo con error</label>
+                <input class="field__control" id="ds-correo" type="email" value="correo-invalido" aria-invalid="true" aria-describedby="ds-correo-error">
+                <p class="field__error" id="ds-correo-error">Escribe un correo válido, por ejemplo nombre@dominio.com.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="ds-mensaje">Área de texto</label>
+                <textarea class="field__control" id="ds-mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+              </div>
+            </div>
+
+            <div class="ds-demo ds-demo--wide">
+              <h4>Barra de navegación</h4>
+              <nav class="navbar navbar--demo" aria-label="Ejemplo de barra de navegación">
+                <div class="navbar__inner">
+                  <a class="navbar__brand" href="#inicio">
+                    <span class="navbar__mark" aria-hidden="true">DA</span>
+                    <span>Diana Nicole Avila Villao</span>
+                  </a>
+                  <ul class="navbar__menu">
+                    <li><a class="navbar__link" href="#sobre-mi">Sobre mí</a></li>
+                    <li><a class="navbar__link" href="#proyectos" aria-current="true">Proyectos</a></li>
+                    <li><a class="navbar__link" href="#contacto">Contacto</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <div class="ds-demo ds-demo--wide ds-demo--card">
+              <h4>Card de proyecto</h4>
+              <article class="project-card">
+                <figure class="project-card__media">
+                  <img src="assets/img/proyecto-owasp-zap.svg" alt="Ventana de escaneo con un escudo y barras que representan alertas de riesgo alto, medio y bajo" width="640" height="400" loading="lazy">
+                </figure>
+                <div class="project-card__body">
+                  <h5 class="project-card__title h3">Análisis de vulnerabilidades con OWASP ZAP</h5>
+                  <p class="project-card__summary">Escaneo de seguridad a OWASP Juice Shop, una aplicación web hecha para practicar, con un informe técnico de los hallazgos.</p>
+                  <dl class="project-card__facts">
+                    <div>
+                      <dt>Problema que resuelve</dt>
+                      <dd>Las aplicaciones web pueden tener fallos de seguridad que solo se notan al probarlas; había que encontrarlos y explicarlos con claridad.</dd>
+                    </div>
+                    <div>
+                      <dt>Tecnologías</dt>
+                      <dd>
+                        <ul class="badge-list">
+                          <li class="badge">OWASP ZAP</li>
+                          <li class="badge">Juice Shop</li>
+                          <li class="badge">Seguridad web</li>
+                        </ul>
+                      </dd>
+                    </div>
+                  </dl>
+                  <div class="project-card__more" hidden>
+                    <h4>Mi aporte</h4>
+                    <p>Ejecuté el escaneo, identifiqué seis vulnerabilidades y redacté un informe técnico con formato institucional.</p>
+                    <h4>Qué aprendí</h4>
+                    <p>A leer las alertas de ZAP y a explicar su nivel de riesgo en un informe.</p>
+                  </div>
+                </div>
+                <div class="project-card__actions">
+                  <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
+                  <a class="button button--secondary button--small" href="https://github.com/tu-usuario/informe-owasp-zap" target="_blank" rel="noopener">Repositorio</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <header class="section__header">
+          <h2 id="titulo-contacto">Contacto</h2>
+          <p class="section__lead">Escríbeme si quieres conversar sobre un proyecto, una práctica o una oportunidad.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="panel">
+            <h3>Datos de contacto</h3>
+            <address class="contact-list">
+              <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a>
+              <a href="https://github.com/Diana-avila-v" target="_blank" rel="noopener">GitHub: tu-usuario</a>
+              <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn: tu-usuario</a>
+            </address>
+          </div>
+
+          <form class="panel contact-form" id="form-contacto" novalidate>
+            <h3>Envíame un mensaje</h3>
+
+            <div class="field">
+              <label class="field__label" for="nombre">Nombre</label>
+              <input class="field__control" id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="nombre-error">
+              <p class="field__error" id="nombre-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="correo">Correo electrónico</label>
+              <input class="field__control" id="correo" name="correo" type="email" autocomplete="email" required aria-describedby="correo-error">
+              <p class="field__error" id="correo-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="asunto">Asunto</label>
+              <input class="field__control" id="asunto" name="asunto" type="text" required aria-describedby="asunto-error">
+              <p class="field__error" id="asunto-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="mensaje">Mensaje</label>
+              <textarea class="field__control" id="mensaje" name="mensaje" rows="5" required aria-describedby="mensaje-error"></textarea>
+              <p class="field__error" id="mensaje-error" hidden></p>
+            </div>
+
+            <button class="button button--primary" type="submit">Enviar mensaje</button>
+            <p class="form-status" role="status" data-form-status hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 Diana Nicole Avila Villao. Hecho con HTML, CSS y JavaScript.</p>
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Volver al inicio" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <dialog class="modal" id="modal-proyecto" aria-labelledby="modal-titulo">
+    <div class="modal__panel">
+      <div class="modal__header">
+        <h3 id="modal-titulo" data-modal-title>Detalles del proyecto</h3>
+        <button class="icon-button" type="button" data-close-modal aria-label="Cerrar detalles">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6 6l12 12M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body" data-modal-body></div>
+    </div>
+  </dialog>
+</body>
+</html>
