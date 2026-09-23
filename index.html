@@ -96,7 +96,6 @@
             <rect class="schema__box" x="8" y="332" width="210" height="100" rx="10"/>
             <path class="schema__head--dim" d="M8 364V342a10 10 0 0 1 10-10H208a10 10 0 0 1 10 10V364Z"/>
             <text class="schema__title schema__title--dim" x="22" y="354">Dim_Seguridad</text>
-            <text class="schema__row" x="22" y="390">OWASP ZAP</text>
             <text class="schema__row" x="22" y="416">Juice Shop</text>
 
             <rect class="schema__box" x="302" y="332" width="210" height="100" rx="10"/>
@@ -143,8 +142,8 @@
                 Universidad Estatal de Milagro (UNEMI), en curso
               </li>
               <li>
-                <strong>Materias que más uso</strong>
-                Business Intelligence y Proceso y Calidad de Software
+                <strong>Enfoque</strong>
+                Gestión de equipos y coordinación de proyectos de software
               </li>
             </ul>
 
@@ -153,14 +152,18 @@
               <li class="badge">Business Intelligence</li>
               <li class="badge">Modelado de datos</li>
               <li class="badge">Calidad de software</li>
-              <li class="badge">Seguridad de aplicaciones</li>
-              <li class="badge">Desarrollo móvil</li>
+              <li class="badge">Gestión de equipos</li>
+              <li class="badge">Metodologías ágiles</li>
             </ul>
 
             <h3>Aprendiendo ahora</h3>
             <ul class="badge-list">
               <li class="badge badge--accent">JavaScript</li>
               <li class="badge badge--accent">Flutter</li>
+              <li class="badge badge--accent">APIs</li>
+              <li class="badge badge--accent">ML Kit</li>
+              <li class="badge badge--accent">Edge Functions</li>
+              <li class="badge badge--accent">Supabase</li>
             </ul>
           </aside>
         </div>
@@ -248,7 +251,7 @@
                   <p class="skill__desc">Interacciones con el DOM, como las de este portafolio.</p>
                   <p class="skill__level" data-level="1">
                     <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
-                    Aprendiendo
+                    Intermedio
                   </p>
                 </div>
               </li>
@@ -270,24 +273,13 @@
             <h3 id="grupo-calidad">Calidad, seguridad y herramientas</h3>
             <ul class="skill-list">
               <li class="skill">
-                <span class="skill__icon" aria-hidden="true">ZAP</span>
-                <div>
-                  <h4 class="skill__name">OWASP ZAP</h4>
-                  <p class="skill__desc">Escaneo de una aplicación de práctica y lectura de sus alertas.</p>
-                  <p class="skill__level" data-level="2">
-                    <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
-                    Básico
-                  </p>
-                </div>
-              </li>
-              <li class="skill">
                 <span class="skill__icon" aria-hidden="true">SC</span>
                 <div>
                   <h4 class="skill__name">Scrum y ClickUp</h4>
                   <p class="skill__desc">Gestión de un proyecto con sprints y tablero de tareas.</p>
                   <p class="skill__level" data-level="2">
                     <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
-                    Básico
+                    Intermedio
                   </p>
                 </div>
               </li>
@@ -298,7 +290,7 @@
                   <p class="skill__desc">Control de versiones con commits descriptivos y repositorio público.</p>
                   <p class="skill__level" data-level="2">
                     <span class="level-dots" aria-hidden="true"><span></span><span></span><span></span></span>
-                    Básico
+                    Intermedio
                   </p>
                 </div>
               </li>
@@ -362,75 +354,79 @@
             </div>
           </article>
 
-          <article class="project-card" data-tecnologias="sql-server">
+          <article class="project-card" data-tecnologias="arduino python flask sqlite tailwindcss">
             <figure class="project-card__media">
-              <img src="assets/img/proyecto-cineplus.svg" alt="Diagrama entidad-relación con las tablas Usuarios, Contenidos, Reproducciones y Valoraciones" width="640" height="400" loading="lazy">
+              <img src="assets/img/proyecto-arduino.png" alt="Sistema de monitoreo ambiental con Arduino para registrar niveles de luz y sonido" width="640" height="400" loading="lazy">
             </figure>
             <div class="project-card__body">
-              <h3 class="project-card__title">Base de datos CinePlus</h3>
-              <p class="project-card__summary">Diseño e implementación en SQL Server de la base de datos de una plataforma de streaming simulada: usuarios, contenidos, reproducciones y valoraciones.</p>
+              <h3 class="project-card__title">Sistema de Monitoreo Ambiental con Arduino</h3>
+              <p class="project-card__summary">Sistema web para monitorear condiciones ambientales mediante Arduino, registrando niveles de luz y sonido y permitiendo consultar las mediciones desde un dashboard interactivo.</p>
               <dl class="project-card__facts">
                 <div>
                   <dt>Problema que resuelve</dt>
-                  <dd>Una plataforma de streaming necesita registrar qué ve cada usuario y cómo valora los contenidos, con datos consistentes y sin duplicados.</dd>
+                  <dd>Facilita la captura y consulta de mediciones ambientales obtenidas mediante sensores de luz y sonido, centralizando los datos en una  aplicación web para su seguimiento y análisis.</dd>
                 </div>
                 <div>
                   <dt>Tecnologías</dt>
                   <dd>
                     <ul class="badge-list">
-                      <li class="badge">SQL Server</li>
-                      <li class="badge">SSMS</li>
-                      <li class="badge">Modelo entidad-relación</li>
+                      <li class="badge">Arduino</li>
+                      <li class="badge">Python</li>
+                      <li class="badge">Flask</li>
+                      <li class="badge">SQLite</li>
+                      <li class="badge">JavaScript</li>
+                      <li class="badge">TailwindCSS</li>
                     </ul>
                   </dd>
                 </div>
               </dl>
               <div class="project-card__more" hidden>
                 <h4>Mi aporte</h4>
-                <p>Modelo entidad-relación y scripts CREATE TABLE con llaves primarias y foráneas para Usuarios, Contenidos, Reproducciones y Valoraciones.</p>
+                <p> Desarrollo de la aplicación web con Flask, integración con Arduino mediante comunicación serial, gestión de mediciones y lugares, almacenamiento de datos en SQLite y creación de un dashboard para visualizar estadísticas.</p>
                 <h4>Qué aprendí</h4>
-                <p>A traducir un caso de negocio a un modelo relacional y a resolver problemas de conexión con SSMS.</p>
+                <p>Aprendí a integrar hardware con una aplicación web, gestionar la comunicación serial entre Arduino y Python, estructurar una aplicación Flask por módulos y trabajar con almacenamiento y visualización de datos.</p>
               </div>
             </div>
             <div class="project-card__actions">
               <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
-              <a class="button button--secondary button--small" href="https://github.com/tu-usuario/cineplus-bd" target="_blank" rel="noopener">Repositorio</a>
+              <a class="button button--secondary button--small" href="https://github.com/Diana-avila-v/proyecto_arduino" target="_blank" rel="noopener">Repositorio</a>
             </div>
           </article>
 
-          <article class="project-card" data-tecnologias="owasp-zap">
+          <article class="project-card" data-tecnologias="python flask ia">
             <figure class="project-card__media">
-              <img src="assets/img/proyecto-owasp-zap.svg" alt="Ventana de escaneo con un escudo y barras que representan alertas de riesgo alto, medio y bajo" width="640" height="400" loading="lazy">
+              <img src="assets/img/proyecto-colorclassify.png" alt="Interfaz web de ColorClassifyAI mostrando la predicción de color de una imagen" width="640" height="400" loading="lazy">
             </figure>
             <div class="project-card__body">
-              <h3 class="project-card__title">Análisis de vulnerabilidades con OWASP ZAP</h3>
-              <p class="project-card__summary">Escaneo de seguridad a OWASP Juice Shop, una aplicación web hecha para practicar, con un informe técnico de los hallazgos.</p>
+              <h3 class="project-card__title">colorClassifyAI</h3>
+              <p class="project-card__summary">Aplicación web que detecta y clasifica el color dominante de una imagen mediante un modelo de aprendizaje automático entrenado con un dataset propio.</p>
               <dl class="project-card__facts">
                 <div>
                   <dt>Problema que resuelve</dt>
-                  <dd>Las aplicaciones web pueden tener fallos de seguridad que solo se notan al probarlas; había que encontrarlos y explicarlos con claridad.</dd>
+                  <dd>Identificar de forma automática el color de un objeto en una imagen o en video, sin que una persona tenga que revisarlo a simple vista.</dd>
                 </div>
                 <div>
                   <dt>Tecnologías</dt>
                   <dd>
                     <ul class="badge-list">
-                      <li class="badge">OWASP ZAP</li>
-                      <li class="badge">Juice Shop</li>
-                      <li class="badge">Seguridad web</li>
+                      <li class="badge">Python</li>
+                      <li class="badge">Flask</li>
+                      <li class="badge">TensorFlow / Keras</li>
+                      <li class="badge">OpenCV</li>
                     </ul>
                   </dd>
                 </div>
               </dl>
               <div class="project-card__more" hidden>
                 <h4>Mi aporte</h4>
-                <p>Ejecuté el escaneo, identifiqué seis vulnerabilidades y redacté un informe técnico con formato institucional.</p>
+                <p>Generación del dataset de imágenes por color, entrenamiento del modelo de clasificación y desarrollo de la aplicación web con Flask para probarlo con imágenes y cámara en vivo.</p>
                 <h4>Qué aprendí</h4>
-                <p>A leer las alertas de ZAP y a explicar su nivel de riesgo en un informe.</p>
+                <p>A entrenar y ajustar un modelo de clasificación de imágenes, y a conectar un modelo de IA con una aplicación web real.</p>
               </div>
             </div>
             <div class="project-card__actions">
               <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
-              <a class="button button--secondary button--small" href="https://github.com/tu-usuario/informe-owasp-zap" target="_blank" rel="noopener">Repositorio</a>
+              <a class="button button--secondary button--small" href="https://github.com/Diana-avila-v/ColorClassifyAI" target="_blank" rel="noopener">Repositorio</a>
             </div>
           </article>
 
