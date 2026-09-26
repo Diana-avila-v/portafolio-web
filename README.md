@@ -2,8 +2,8 @@
 
 Portafolio personal e interactivo de un estudiante de Ingeniería de Software de la Universidad Estatal de Milagro (UNEMI). Presenta el perfil académico, las habilidades técnicas, cuatro proyectos destacados y un Design System que documenta las decisiones visuales del propio sitio.
 
-- Sitio publicado: https://TU-USUARIO.github.io/NOMBRE-DEL-REPOSITORIO/
-- Repositorio: https://github.com/TU-USUARIO/NOMBRE-DEL-REPOSITORIO
+- Sitio publicado: https://diana-avila-v.github.io/portafolio-web/
+- Repositorio: https://github.com/Diana-avila-v/portafolio-web
 
 ## Capturas
 
@@ -76,18 +76,6 @@ python -m http.server 8000
 
 Luego entra a `http://localhost:8000`.
 
-## Publicar en GitHub Pages
 
-1. Crea un repositorio público en GitHub y sube el proyecto.
-2. En **Settings > Pages**, elige **Deploy from a branch**, rama `main` y carpeta `/ (root)`.
-3. Espera un minuto y abre la URL que aparece en esa pantalla.
 
-## Antes de entregar
 
-- [ ] Reemplazar nombre, correo, GitHub y LinkedIn (buscar `Tu Nombre`, `tu-usuario` y `ejemplo.com`).
-- [ ] Reemplazar `assets/img/foto-perfil.svg` por una foto o avatar propio y actualizar su `alt`.
-- [ ] Revisar que los enlaces de repositorio de cada proyecto existan, o quitarlos.
-- [ ] Ajustar los niveles de habilidad a lo que puedas explicar en la presentación.
-- [ ] Abrir la URL pública en una ventana privada y probar CSS, imágenes, navegación, tema, filtro, modal y formulario.
-- [ ] Probar la versión móvil y revisar que la consola del navegador no muestre errores.
-- [ ] Agregar las tres capturas a `capturas/`.
