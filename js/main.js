@@ -161,7 +161,6 @@
     }
 
     function fillModal(card) {
-      const image = card.querySelector('.project-card__media img');
       const summary = card.querySelector('.project-card__summary');
       const details = card.querySelector('.project-card__more');
       const technologies = card.querySelector('.badge-list');
@@ -169,19 +168,6 @@
 
       title.textContent = card.querySelector('.project-card__title').textContent;
       body.replaceChildren();
-
-      if (image) {
-        const clone = image.cloneNode(true);
-        clone.removeAttribute('loading');
-        clone.classList.add('modal__image');
-        body.append(clone);
-      }
-
-      if (summary) {
-        const paragraph = document.createElement('p');
-        paragraph.textContent = summary.textContent;
-        body.append(paragraph);
-      }
 
       if (details) {
         details.childNodes.forEach((node) => body.append(node.cloneNode(true)));

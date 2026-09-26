@@ -49,6 +49,7 @@
   display: grid;
   gap: var(--space-md);
   justify-items: start;
+  text-align: left;
 }
 
 .hero__role {
@@ -70,88 +71,19 @@
   margin-top: var(--space-sm);
 }
 
-.schema {
+.hero__portrait {
   width: 100%;
-  max-width: 32.5rem;
+  max-width: 22rem;
   margin-inline: auto;
 }
 
-.schema figcaption {
-  margin-top: var(--space-sm);
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
-}
-
-.schema__line {
-  fill: none;
-  stroke: var(--color-text-muted);
-  stroke-width: 2;
-  stroke-dasharray: 120;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .schema__line {
-    animation: draw-line 900ms ease-out 200ms both;
-  }
-}
-
-@keyframes draw-line {
-  from {
-    stroke-dashoffset: 120;
-  }
-}
-
-.schema__box {
-  fill: var(--color-surface);
-  stroke: var(--color-border);
-  stroke-width: 2;
-}
-
-.schema__head--fact {
-  fill: var(--color-primary);
-}
-
-.schema__head--dim {
-  fill: var(--color-secondary);
-}
-
-.schema__title {
-  font-family: var(--font-heading);
-  font-size: 17px;
-  font-weight: var(--weight-bold);
-}
-
-.schema__title--fact {
-  fill: var(--color-on-primary);
-}
-
-.schema__title--dim {
-  fill: var(--color-on-secondary);
-}
-
-.schema__row {
-  fill: var(--color-text);
-  font-family: var(--font-body);
-  font-size: 15px;
-}
-
-.about__grid {
-  display: grid;
-  gap: var(--space-xl);
-}
-
-.portrait img {
+.hero__portrait img {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border: var(--border-default);
   border-radius: var(--radius-lg);
-}
-
-.portrait figcaption {
-  margin-top: var(--space-sm);
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
 }
 
 .about__text {
@@ -159,6 +91,20 @@
   gap: var(--space-md);
   align-content: start;
   max-width: 40rem;
+}
+
+.about__layout {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.about__main {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.about__main .section__header {
+  margin-bottom: 0;
 }
 
 .detail-list {
@@ -208,8 +154,9 @@
 .project-grid {
   display: grid;
   gap: var(--space-lg);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
-  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 26rem));
+  justify-content: center;
+ /*align-items: start;*/
 }
 
 .ds-block {
@@ -465,36 +412,25 @@
 .site-footer__links {
   display: flex;
   gap: var(--space-md);
+  padding-right: 3.5rem;
 }
 
-@media (min-width: 40rem) {
-  .about__grid {
-    grid-template-columns: 14rem 1fr;
-  }
-
-  .about__aside {
-    grid-column: 1 / -1;
+@media (min-width: 48rem) {
+  .about__layout {
+    grid-template-columns: 1fr 20rem;
+    align-items: start;
   }
 }
 
 @media (min-width: 56rem) {
-  .hero__grid {
-    grid-template-columns: 1.05fr 0.95fr;
-  }
-
   .contact__grid {
     grid-template-columns: 1fr 1.4fr;
   }
 }
 
-@media (min-width: 64rem) {
-  .about__grid {
-    grid-template-columns: 16rem 1fr 20rem;
-    align-items: start;
-  }
-
-  .about__aside {
-    grid-column: auto;
+@media (min-width: 56rem) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
   }
 }
 
@@ -503,4 +439,45 @@
     left: var(--space-md);
     right: var(--space-md);
   }
+}
+
+.about__learning {
+  width: min(100%, 36rem);
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  border-left: 4px solid var(--color-primary);
+}
+
+.about__learning {
+  width: min(100%, 36rem);
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  border-left: 4px solid var(--color-primary);
+}
+
+.about__learning-head {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.about__learning-head h3 {
+  font-size: var(--text-lg);
+}
+
+.about__learning-head p {
+  max-width: 32rem;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.about__learning-label {
+  color: var(--color-link);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
 }

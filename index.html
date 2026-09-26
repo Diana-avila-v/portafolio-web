@@ -25,7 +25,7 @@
       <div class="navbar__inner container">
         <a class="navbar__brand" href="#inicio">
           <span class="navbar__mark" aria-hidden="true">DA</span>
-          <span> FDiana Nicole Avila Villao</span>
+          <span> Diana Nicole Avila Villao</span>
         </a>
 
         <ul class="navbar__menu" id="menu-principal">
@@ -70,93 +70,47 @@
             <a class="button button--secondary" href="#contacto">Escribirme</a>
           </div>
         </div>
-
-        <figure class="schema">
-          <svg viewBox="0 0 520 440" role="img" aria-labelledby="schema-titulo schema-desc" focusable="false">
-            <title id="schema-titulo">Esquema estrella de mi perfil</title>
-            <desc id="schema-desc">Una tabla de hechos central conectada con cuatro dimensiones: datos, calidad, seguridad y software.</desc>
-
-            <path class="schema__line" d="M113 108 L200 150"/>
-            <path class="schema__line" d="M407 108 L320 150"/>
-            <path class="schema__line" d="M113 332 L200 290"/>
-            <path class="schema__line" d="M407 332 L320 290"/>
-
-            <rect class="schema__box" x="8" y="8" width="210" height="100" rx="10"/>
-            <path class="schema__head--dim" d="M8 40V18a10 10 0 0 1 10-10H208a10 10 0 0 1 10 10V40Z"/>
-            <text class="schema__title schema__title--dim" x="22" y="30">Dim_Datos</text>
-            <text class="schema__row" x="22" y="66">SQL Server</text>
-            <text class="schema__row" x="22" y="92">Power BI, SSIS</text>
-
-            <rect class="schema__box" x="302" y="8" width="210" height="100" rx="10"/>
-            <path class="schema__head--dim" d="M302 40V18a10 10 0 0 1 10-10H502a10 10 0 0 1 10 10V40Z"/>
-            <text class="schema__title schema__title--dim" x="316" y="30">Dim_Calidad</text>
-            <text class="schema__row" x="316" y="66">Scrum, ClickUp</text>
-            <text class="schema__row" x="316" y="92">Informes técnicos</text>
-
-            <rect class="schema__box" x="8" y="332" width="210" height="100" rx="10"/>
-            <path class="schema__head--dim" d="M8 364V342a10 10 0 0 1 10-10H208a10 10 0 0 1 10 10V364Z"/>
-            <text class="schema__title schema__title--dim" x="22" y="354">Dim_Seguridad</text>
-            <text class="schema__row" x="22" y="416">Juice Shop</text>
-
-            <rect class="schema__box" x="302" y="332" width="210" height="100" rx="10"/>
-            <path class="schema__head--dim" d="M302 364V342a10 10 0 0 1 10-10H502a10 10 0 0 1 10 10V364Z"/>
-            <text class="schema__title schema__title--dim" x="316" y="354">Dim_Software</text>
-            <text class="schema__row" x="316" y="390">HTML, CSS, JS</text>
-            <text class="schema__row" x="316" y="416">Flutter (aprendiendo)</text>
-
-            <rect class="schema__box" x="150" y="150" width="220" height="140" rx="10"/>
-            <path class="schema__head--fact" d="M150 186V160a10 10 0 0 1 10-10H360a10 10 0 0 1 10 10V186Z"/>
-            <text class="schema__title schema__title--fact" x="164" y="174">Hecho_Formacion</text>
-            <text class="schema__row" x="164" y="214">claves a las 4 dimensiones</text>
-            <text class="schema__row" x="164" y="242">proyectos_entregados</text>
-            <text class="schema__row" x="164" y="270">habilidades_registradas</text>
-          </svg>
-          <figcaption>Mi perfil como esquema estrella: un hecho central y cuatro dimensiones.</figcaption>
+        <figure class="hero__portrait">
+          <img src="assets/img/foto-perfil.jpeg" alt="Retrato de Diana Nicole Avila Villao" width="320" height="400">
         </figure>
       </div>
     </section>
 
     <section class="section section--alt" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
-      <div class="container">
-        <header class="section__header">
-          <h2 id="titulo-sobre-mi">Sobre mí</h2>
-          <p class="section__lead">Quién soy, qué estudio y qué estoy aprendiendo.</p>
-        </header>
-
-        <div class="about__grid">
-          <figure class="portrait">
-            <img src="assets/img/foto-perfil.jpeg" alt="Retrato de Diana Nicole Avila Villao" width="320" height="400">
-            <figcaption>Estudiante de Ingeniería de Software, UNEMI</figcaption>
-          </figure>
+      <div class="container about__layout">
+        <div class="about__main">
+          <header class="section__header">
+            <h2 id="titulo-sobre-mi">Sobre mí</h2>
+            <p class="section__lead">Quién soy, qué estudio y qué estoy aprendiendo.</p>
+          </header>
 
           <div class="about__text">
-            <p>Estudiante de Ingeniería de Software en la Universidad Estatal de Milagro (UNEMI). He desarrollado proyectos en distintas áreas: sistemas con Arduino y Flask, aplicaciones web con inteligencia artificial, análisis de datos con SQL Server y Power BI y análisis de software para empresas, trabajando en equipo con metodologías ágiles como Scrum.</p>
-            <p>Actualmente desarrollo mi trabajo de titulación: un sistema de gestión de envases retornables para distribuidoras de agua embotellada, con Flutter y APIs de predicción de riesgo de pérdida.</p>
+            <p>
+              Soy estudiante de Ingeniería de Software en la Universidad Estatal de Milagro (UNEMI),
+              con interés en el desarrollo de aplicaciones, análisis de datos y calidad de software.
+              He participado en proyectos académicos que combinan desarrollo web, inteligencia
+              artificial, bases de datos y soluciones IoT, trabajando en equipo bajo metodologías ágiles.
+            </p>
+
+            <p>
+              Actualmente desarrollo mi trabajo de titulación, enfocado en un sistema de gestión
+              de envases retornables para distribuidoras de agua embotellada, utilizando Flutter
+              y APIs para la predicción de riesgo de pérdida.
+            </p>
           </div>
 
-          <aside class="panel about__aside" aria-labelledby="titulo-formacion">
-            <h3 id="titulo-formacion">Formación</h3>
-            <ul class="detail-list">
-              <li>
-                <strong>Ingeniería de Software</strong>
-                Universidad Estatal de Milagro (UNEMI), en curso
-              </li>
-              <li>
-                <strong>Enfoque</strong>
-                Gestión de equipos y coordinación de proyectos de software
-              </li>
-            </ul>
+          <!-- Aprendizaje actual -->
+          <div class="panel about__learning">
+            <div class="about__learning-head">
+              <div>
+                <span class="about__learning-label">En constante aprendizaje</span>
+                <h3>Actualmente aprendiendo</h3>
+              </div>
+              <p>
+                Tecnologías y herramientas que estoy incorporando a mis proyectos actuales.
+              </p>
+            </div>
 
-            <h3>Intereses</h3>
-            <ul class="badge-list">
-              <li class="badge">Business Intelligence</li>
-              <li class="badge">Modelado de datos</li>
-              <li class="badge">Calidad de software</li>
-              <li class="badge">Gestión de equipos</li>
-              <li class="badge">Metodologías ágiles</li>
-            </ul>
-
-            <h3>Aprendiendo ahora</h3>
             <ul class="badge-list">
               <li class="badge badge--accent">JavaScript</li>
               <li class="badge badge--accent">Flutter</li>
@@ -165,8 +119,36 @@
               <li class="badge badge--accent">Edge Functions</li>
               <li class="badge badge--accent">Supabase</li>
             </ul>
-          </aside>
+          </div>
         </div>
+
+        <aside class="panel about__aside" aria-labelledby="titulo-formacion">
+          <h3 id="titulo-formacion">Formación</h3>
+
+          <ul class="detail-list">
+            <li>
+              <strong>Ingeniería de Software</strong>
+              Universidad Estatal de Milagro (UNEMI), en curso
+            </li>
+            <li>
+              <strong>Enfoque</strong>
+              Desarrollo de software, análisis de datos y calidad de software.
+            </li>
+            <li>
+              <strong>Fortalezas</strong>
+              Gestión de equipos y coordinación de proyectos.
+            </li>
+          </ul>
+
+          <h3>Intereses</h3>
+
+          <ul class="badge-list">
+            <li class="badge">Business Intelligence</li>
+            <li class="badge">Modelado de datos</li>
+            <li class="badge">Calidad de software</li>
+            <li class="badge">Inteligencia Artificial</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -311,7 +293,8 @@
           <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
           <button class="chip" type="button" data-filter="sql-server" aria-pressed="false">SQL Server</button>
           <button class="chip" type="button" data-filter="power-bi" aria-pressed="false">Power BI</button>
-          <button class="chip" type="button" data-filter="owasp-zap" aria-pressed="false">OWASP ZAP</button>
+          <button class="chip" type="button" data-filter="arduino" aria-pressed="false">Arduino</button>
+          <button class="chip" type="button" data-filter="python" aria-pressed="false">Python</button>
           <button class="chip" type="button" data-filter="flutter" aria-pressed="false">Flutter</button>
         </div>
         <p class="filters__status" role="status" data-filter-status>Mostrando 4 de 4 proyectos</p>
@@ -319,16 +302,12 @@
         <div class="project-grid" id="lista-proyectos">
           <article class="project-card" data-tecnologias="sql-server ssis ssas power-bi">
             <figure class="project-card__media">
-              <img src="assets/img/proyecto-grooming.svg" alt="Esquema estrella del datamart Grooming con la tabla de hechos al centro y seis dimensiones alrededor" width="640" height="400" loading="lazy">
+              <img src="assets/img/proyecto-grooming.png" alt="Esquema estrella del datamart Grooming con la tabla de hechos al centro y seis dimensiones alrededor" width="640" height="400" loading="lazy">
             </figure>
             <div class="project-card__body">
               <h3 class="project-card__title">Datamart Grooming de PetCare 360</h3>
               <p class="project-card__summary">Datamart y dashboard para analizar los servicios de grooming de una empresa de cuidado de mascotas: ingresos, utilidad, servicios más rentables y clientes.</p>
               <dl class="project-card__facts">
-                <div>
-                  <dt>Problema que resuelve</dt>
-                  <dd>Los datos vivían en un sistema transaccional y la gerencia no podía ver ingresos, márgenes ni tendencias por sucursal, servicio o canal.</dd>
-                </div>
                 <div>
                   <dt>Tecnologías</dt>
                   <dd>
@@ -342,15 +321,16 @@
                 </div>
               </dl>
               <div class="project-card__more" hidden>
+                <h4>Problema que resuelve</h4>
+                <p>Los datos vivían en un sistema transaccional y la gerencia no podía ver ingresos, márgenes ni tendencias por sucursal, servicio o canal.</p>
                 <h4>Mi aporte</h4>
-                <p>Modelo dimensional en esquema estrella (una tabla de hechos y siete dimensiones) y dashboard de tres páginas en Power BI conectado en vivo al cubo. El ETL y el cubo OLAP se desarrollaron en equipo.</p>
+                <p>Participé junto a mi equipo en el diseño del modelo dimensional en esquema estrella, dashboard de páginas en Power BI conectado en vivo al cubo.</p>
                 <h4>Qué aprendí</h4>
                 <p>A separar el modelo transaccional del analítico, a definir KPIs como margen de utilidad y crecimiento de ingresos, y a detectar duplicados que inflaban las cantidades.</p>
               </div>
             </div>
             <div class="project-card__actions">
               <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
-              <a class="button button--secondary button--small" href="https://github.com/tu-usuario/datamart-grooming" target="_blank" rel="noopener">Repositorio</a>
             </div>
           </article>
 
@@ -362,10 +342,6 @@
               <h3 class="project-card__title">Sistema de Monitoreo Ambiental con Arduino</h3>
               <p class="project-card__summary">Sistema web para monitorear condiciones ambientales mediante Arduino, registrando niveles de luz y sonido y permitiendo consultar las mediciones desde un dashboard interactivo.</p>
               <dl class="project-card__facts">
-                <div>
-                  <dt>Problema que resuelve</dt>
-                  <dd>Facilita la captura y consulta de mediciones ambientales obtenidas mediante sensores de luz y sonido, centralizando los datos en una  aplicación web para su seguimiento y análisis.</dd>
-                </div>
                 <div>
                   <dt>Tecnologías</dt>
                   <dd>
@@ -381,6 +357,8 @@
                 </div>
               </dl>
               <div class="project-card__more" hidden>
+                <h4>Problema que resuelve</h4>
+                <p>Facilita la captura y consulta de mediciones ambientales obtenidas mediante sensores de luz y sonido, centralizando los datos en una  aplicación web para su seguimiento y análisis.</p>
                 <h4>Mi aporte</h4>
                 <p> Desarrollo de la aplicación web con Flask, integración con Arduino mediante comunicación serial, gestión de mediciones y lugares, almacenamiento de datos en SQLite y creación de un dashboard para visualizar estadísticas.</p>
                 <h4>Qué aprendí</h4>
@@ -402,10 +380,6 @@
               <p class="project-card__summary">Aplicación web que detecta y clasifica el color dominante de una imagen mediante un modelo de aprendizaje automático entrenado con un dataset propio.</p>
               <dl class="project-card__facts">
                 <div>
-                  <dt>Problema que resuelve</dt>
-                  <dd>Identificar de forma automática el color de un objeto en una imagen o en video, sin que una persona tenga que revisarlo a simple vista.</dd>
-                </div>
-                <div>
                   <dt>Tecnologías</dt>
                   <dd>
                     <ul class="badge-list">
@@ -418,6 +392,8 @@
                 </div>
               </dl>
               <div class="project-card__more" hidden>
+                <h4>Problema que resuelve</h4>
+                <p>Identificar de forma automática el color de un objeto en una imagen o en video, sin que una persona tenga que revisarlo a simple vista.</p>
                 <h4>Mi aporte</h4>
                 <p>Generación del dataset de imágenes por color, entrenamiento del modelo de clasificación y desarrollo de la aplicación web con Flask para probarlo con imágenes y cámara en vivo.</p>
                 <h4>Qué aprendí</h4>
@@ -432,17 +408,13 @@
 
           <article class="project-card" data-tecnologias="flutter">
             <figure class="project-card__media">
-              <img src="assets/img/proyecto-bidones.svg" alt="Tres bidones de agua marcados como en la empresa, prestado y en riesgo" width="640" height="400" loading="lazy">
+              <img src="assets/img/proyecto-bidones.png" alt="Tres bidones de agua marcados como en la empresa, prestado y en riesgo" width="640" height="400" loading="lazy">
             </figure>
             <div class="project-card__body">
               <p class="badge badge--accent">En desarrollo</p>
               <h3 class="project-card__title">Sistema de gestión de bidones</h3>
               <p class="project-card__summary">Sistema para controlar los bidones de agua de una empresa distribuidora: a quién se prestaron, quién tiene deudas y en qué estado están.</p>
               <dl class="project-card__facts">
-                <div>
-                  <dt>Problema que resuelve</dt>
-                  <dd>La empresa lleva todo en papel y no puede saber qué bidones están en la calle, qué clientes deben ni quiénes compran más.</dd>
-                </div>
                 <div>
                   <dt>Tecnologías</dt>
                   <dd>
@@ -454,6 +426,8 @@
                 </div>
               </dl>
               <div class="project-card__more" hidden>
+                <h4>Problema que resuelve</h4>
+                <p>La empresa lleva todo en papel y no puede saber qué bidones están en la calle, qué clientes deben ni quiénes compran más.</p>
                 <h4>Mi aporte</h4>
                 <p>Trabajo en un equipo de tres personas. Definí el problema y los requerimientos: trazabilidad de bidones, morosidad, segmentación de clientes y alertas de bidones en riesgo.</p>
                 <h4>Qué estoy aprendiendo</h4>
@@ -743,39 +717,37 @@
               <h4>Card de proyecto</h4>
               <article class="project-card">
                 <figure class="project-card__media">
-                  <img src="assets/img/proyecto-owasp-zap.svg" alt="Ventana de escaneo con un escudo y barras que representan alertas de riesgo alto, medio y bajo" width="640" height="400" loading="lazy">
+                  <img src="assets/img/proyecto-grooming.png" alt="Esquema estrella del datamart Grooming con la tabla de hechos al centro y seis dimensiones alrededor" width="640" height="400" loading="lazy">
                 </figure>
                 <div class="project-card__body">
-                  <h5 class="project-card__title h3">Análisis de vulnerabilidades con OWASP ZAP</h5>
-                  <p class="project-card__summary">Escaneo de seguridad a OWASP Juice Shop, una aplicación web hecha para practicar, con un informe técnico de los hallazgos.</p>
+                  <h5 class="project-card__title h3">Datamart Grooming de PetCare 360</h5>
+                  <p class="project-card__summary">Datamart y dashboard para analizar los servicios de grooming de una empresa de cuidado de mascotas: ingresos, utilidad, servicios más rentables y clientes.</p>
                   <dl class="project-card__facts">
-                    <div>
-                      <dt>Problema que resuelve</dt>
-                      <dd>Las aplicaciones web pueden tener fallos de seguridad que solo se notan al probarlas; había que encontrarlos y explicarlos con claridad.</dd>
-                    </div>
                     <div>
                       <dt>Tecnologías</dt>
                       <dd>
                         <ul class="badge-list">
-                          <li class="badge">OWASP ZAP</li>
-                          <li class="badge">Juice Shop</li>
-                          <li class="badge">Seguridad web</li>
+                          <li class="badge">SQL Server</li>
+                          <li class="badge">SSIS</li>
+                          <li class="badge">SSAS</li>
+                          <li class="badge">Power BI</li>
                         </ul>
                       </dd>
                     </div>
                   </dl>
                   <div class="project-card__more" hidden>
+                    <h4>Problema que resuelve</h4>
+                    <p>Los datos vivían en un sistema transaccional y la gerencia no podía ver ingresos, márgenes ni tendencias por sucursal, servicio o canal.</p>
                     <h4>Mi aporte</h4>
-                    <p>Ejecuté el escaneo, identifiqué seis vulnerabilidades y redacté un informe técnico con formato institucional.</p>
+                    <p>Participé junto a mi equipo en el diseño del modelo dimensional en esquema estrella (una tabla de hechos y siete dimensiones), y desarrollé el dashboard de tres páginas en Power BI, conectado en vivo al cubo. El ETL y el cubo OLAP se desarrollaron en equipo.</p>
                     <h4>Qué aprendí</h4>
-                    <p>A leer las alertas de ZAP y a explicar su nivel de riesgo en un informe.</p>
+                    <p>A separar el modelo transaccional del analítico, a definir KPIs como margen de utilidad y crecimiento de ingresos, y a detectar duplicados que inflaban las cantidades.</p>
                   </div>
                 </div>
                 <div class="project-card__actions">
                   <button class="button button--primary button--small" type="button" data-open-modal hidden>Ver detalles</button>
-                  <a class="button button--secondary button--small" href="https://github.com/tu-usuario/informe-owasp-zap" target="_blank" rel="noopener">Repositorio</a>
                 </div>
-              </article>
+                </article>
             </div>
           </div>
         </section>
@@ -793,9 +765,8 @@
           <div class="panel">
             <h3>Datos de contacto</h3>
             <address class="contact-list">
-              <a href="mailto:tu.correo@ejemplo.com">tu.correo@ejemplo.com</a>
-              <a href="https://github.com/Diana-avila-v" target="_blank" rel="noopener">GitHub: tu-usuario</a>
-              <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn: tu-usuario</a>
+              <a href="mailto:davilav2@unemi.edu.ec">davilav2@unemi.edu.ec</a>
+              <a href="https://github.com/Diana-avila-v" target="_blank" rel="noopener">GitHub: Diana-avila-v</a>
             </address>
           </div>
 
@@ -838,8 +809,7 @@
     <div class="container site-footer__inner">
       <p>© 2026 Diana Nicole Avila Villao. Hecho con HTML, CSS y JavaScript.</p>
       <ul class="site-footer__links">
-        <li><a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/Diana-avila-v" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </div>
   </footer>
@@ -847,7 +817,7 @@
   <button class="back-to-top" type="button" data-back-to-top aria-label="Volver al inicio" hidden>
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <path d="M12 19V5M5 12l7-7 7 7"/>
-    </svg>
+    </svg> 
   </button>
 
   <dialog class="modal" id="modal-proyecto" aria-labelledby="modal-titulo">
