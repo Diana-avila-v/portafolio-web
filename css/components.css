@@ -504,3 +504,29 @@ textarea.field__control {
     margin-inline: 0;
   }
 }
+
+.has-tooltip {
+  position: relative;
+}
+
+.has-tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-text);
+  color: var(--color-background);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition);
+}
+
+.has-tooltip:hover::after,
+.has-tooltip:focus-visible::after {
+  opacity: 1;
+}
